@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">etherium</string>
+    <string name="mi_qr">Mi QR</string>
+    <string name="qr_personal">Aqui tienes tu QR personal !</string>
+    <string name="bienvenida_titulo">¡ Te damos la bienvenida</string>
+    <string name="nuevo"> de nuevo !</string>
+    <string name="leer_qr">Leer QR\n</string>
+    <string name="escanear">Escanear QR\n</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/fondo">
+
+
+    <ImageView
+        android:id="@+id/icono_qr"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/qr"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="@color/icono"
+        android:contentDescription="@string/mi_qr"/>
+
+    <TextView
+        android:id="@+id/Txtmiqr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toEndOf="@id/icono_qr"
+        android:text="@string/mi_qr"
+        android:textSize="42sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/texto"/>
+
+    <View
+        android:id="@+id/barra"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="140dp"
+        android:background="@color/texto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tarjeta_qr"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        app:layout_constraintTop_toBottomOf="@id/barra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="18dp"
+        app:cardBackgroundColor="@color/tarjeta"
+        app:strokeColor="@color/tarjeta" />
+
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenida_titulo"
+        android:textColor="@color/texto"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="@id/tarjeta_qr"
+        app:layout_constraintStart_toStartOf="@id/tarjeta_qr"/>
+
+    <TextView
+        android:id="@+id/nuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nuevo"
+        android:textColor="@color/texto"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        android:layout_marginTop="115dp"
+        app:layout_constraintEnd_toEndOf="@id/tarjeta_qr"
+        app:layout_constraintStart_toStartOf="@id/tarjeta_qr"/>
+
+    <TextView
+        android:id="@+id/txt_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qr_personal"
+        android:textColor="@color/texto"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="@id/tarjeta_qr"
+        app:layout_constraintStart_toStartOf="@id/tarjeta_qr"/>
+
+    <ImageView
+        android:id="@+id/codigo_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        android:layout_marginTop="240dp"
+        app:layout_constraintEnd_toEndOf="@id/tarjeta_qr"
+        app:layout_constraintStart_toStartOf="@id/tarjeta_qr"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tarjeta_navegacion"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="@color/tarjeta"
+        app:strokeColor="@color/tarjeta"
+        android:layout_marginBottom="0dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/boton_leer_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leer_qr"
+        android:textSize="15sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/texto"
+        app:icon="@drawable/scanner"
+        app:iconGravity="textEnd"
+        app:iconTint="@color/texto"
+        app:backgroundTint="@color/icono"
+        app:iconSize="28dp"
+        app:iconPadding="30dp"
+        app:cornerRadius="12dp"
+        app:layout_constraintTop_toTopOf="@id/tarjeta_navegacion"
+        app:layout_constraintBottom_toBottomOf="@id/tarjeta_navegacion"
+        app:layout_constraintStart_toStartOf="@id/tarjeta_navegacion"
+        app:layout_constraintEnd_toEndOf="@id/tarjeta_navegacion"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
