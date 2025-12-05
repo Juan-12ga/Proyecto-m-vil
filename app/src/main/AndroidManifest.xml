@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Etherium">
         <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
             android:name=".escaner"
             android:exported="false" />
         <activity
