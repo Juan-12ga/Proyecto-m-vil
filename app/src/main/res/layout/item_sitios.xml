@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:backgroundTint="@color/tarjeta"
+    app:cardCornerRadius="17dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp"
+    app:strokeWidth="0dp"
+    app:strokeColor="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/Tlo_bloque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="@string/tlo_bloque"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/tlo_bloque"/>
+
+
+            <TextView
+                android:id="@+id/nombre_bloque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:contentDescription="@string/nombre_bloque"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tlo_sitio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="@string/sitio"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/tlo_sitio" />
+
+            <TextView
+                android:id="@+id/sitio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/sitio"
+                android:layout_marginEnd="207dp"/>
+
+            <ImageView
+                android:id="@+id/eliminar_sitio"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_eliminar_vector"
+                android:layout_marginEnd="18dp"/>
+
+            <ImageView
+                android:id="@+id/editar_sitio"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_editar_vector"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

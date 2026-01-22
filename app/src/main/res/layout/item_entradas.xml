@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:backgroundTint="@color/entrada"
+    app:cardCornerRadius="17dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp"
+    app:strokeWidth="0dp"
+    app:strokeColor="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/tlo_registro"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/tlo_registro"/>
+
+            <TextView
+                android:id="@+id/hora_entrada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/hora_entrada"/>
+
+            <TextView
+                android:id="@+id/fecha_entrada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/fecha_entrada"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tlo_sitio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/entrada"
+                android:text="@string/tlo_sitio"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/sitio_entrada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/sitio_entrada"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tlo_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/nombre"
+                android:contentDescription="@string/titulo_del_cargo"/>
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:contentDescription="@string/nombre"
+                android:layout_marginEnd="20dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/tlo_cargo"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/cargo"
+                android:contentDescription="@string/titulo_del_cargo"/>
+
+            <TextView
+                android:id="@+id/cargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:contentDescription="@string/cargo"
+                android:layout_marginEnd="20dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

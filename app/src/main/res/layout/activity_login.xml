@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logo_etherium"
         android:padding="8dp" />
 
     <TextView
@@ -28,11 +28,9 @@
         app:layout_constraintTop_toBottomOf="@id/logoImagen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         android:textSize="45sp"
         android:fontFamily="@font/poppins_extra_bold"
-        android:textAlignment="center"
-        />
+        android:textAlignment="center"/>
 
 
     <TextView

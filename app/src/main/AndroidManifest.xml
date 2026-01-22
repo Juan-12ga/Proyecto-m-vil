@@ -12,13 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Etherium">
         <activity
-            android:name=".login"
+            android:name=".visitantes"
             android:exported="false" />
         <activity
-            android:name=".escaner"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".sitios"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +23,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".salidas"
+            android:exported="false" />
+        <activity
+            android:name=".entradas"
+            android:exported="false" />
+        <activity
+            android:name=".gestion_instructores"
+            android:exported="false" />
+        <activity
+            android:name=".gestionAprendices"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".escaner"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -7,5 +7,8 @@
     <color name="texto">#F5F5F5</color>
     <color name="botnoes">#a3a8b7</color>
     <color name="tarjeta">#212944</color>
+    <color name="entrada">#09330D</color>
+    <color name="salida">#430D1C</color>
+
 
 </resources>
